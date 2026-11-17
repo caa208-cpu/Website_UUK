@@ -1,0 +1,221 @@
+
+/* BODY */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff5f8;
+    color: #755365;
+}
+
+/* HEADER */
+header {
+    background-color: #f9dce8;
+    color: #a95779;
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 3px solid #f2c4d5;
+}
+
+header h1 {
+    margin: auto;
+    font-size: 30px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin: auto;
+    background-color: #fff0f5;
+    padding: 35px;
+    flex-wrap: wrap;
+}
+
+/* CARD PRODUK */
+.produk {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 28%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(180, 105, 135, 0.12);
+    transition: 0.3s;
+}
+
+.produk:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 7px 18px rgba(180, 105, 135, 0.2);
+}
+
+section p, section h3 {
+    text-align: center;
+    color: #a95779;
+}
+
+section h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d4779a;
+}
+
+section img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* FORM CONTAINER */
+.kotak {
+    background-color: #fff5f8;
+    border-radius: 10px;
+    padding: 45px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORM */
+#formPesan {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    box-shadow: 0 5px 18px rgba(180, 105, 135, 0.12);
+}
+
+form h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    color: #bd6d8c;
+}
+
+/* LABEL */
+label {
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #805668;
+}
+
+/* INPUT */
+input, select, textarea {
+    padding: 13px;
+    width: 65%;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #f0c4d5;
+    border-radius: 9px;
+    background-color: #fff9fb;
+    color: #755365;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #d98ba9;
+    box-shadow: 0 0 5px rgba(217, 139, 169, 0.3);
+}
+
+/* RADIO */
+input[type="radio"] {
+    width: auto;
+    accent-color: #d4779a;
+    margin-right: 5px;
+}
+
+/* TEXTAREA */
+textarea {
+    vertical-align: middle;
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* BUTTON */
+button {
+    background-color: #e99bb8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c96f94;
+    transform: translateY(-3px);
+}
+
+/* FOOTER */
+footer {
+    background-color: #f2c4d5;
+    color: #90536d;
+    border-radius: 5px;
+    text-align: center;
+    padding: 18px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .produk {
+        width: 45%;
+    }
+
+    #formPesan {
+        padding: 25px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    input:not([type="radio"]),
+    select,
+    textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .produk {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .kotak {
+        padding: 25px 12px;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Kantin Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Kantin SMK Telkom</h1>
+    </header>
+    <section>
+        <div class="card-container">
+            <div class="produk">
+                <img src="images (1).jpg" alt="Mie Ayam">
+                <h3>Mie ayam</h3>
+                <p>Rp50.000</p>
+            </div>
+            <div class="produk">
+                <img src="images (2).jpg" alt="Soto">
+                <h3>Soto</h3>
+                <p>Rp35.000</p>
+            </div>
+
+            <div class="produk">
+                <img src="images (3).jpg" alt="Rawon">
+                <h3>Rawon</h3>
+                <p>Rp40.000</p>
+            </div>
+        </div>
+    </section>
+    <div class="kotak">
+        <form action="#" method="get">
+            <div id="formPesan">
+                <h2>Form Pemesanan</h2>
+                <label for="nama">Nama Pemesan:</label>
+                <input type="text" id="nama" name="nama" required minlength="3" maxlength="50" placeholder="Masukkan nama..." pattern="[A-Za-z ]+">
+                <br><br>
+                <label for="">Nomor HP:</label>
+                <input type="tel" id="hp" name="hp" required pattern="[0-9] {10-13}" title="Isi 10 sampai 13 angka">
+                <br><br>
+                <label>Produk</label>
+                <select name="Produk" id="produk" required>z
+                <option value="">Mie ayam</option>
+                <option value="">Soto</option>
+                <option value="">Rawon</option>
+                </select>
+                <br><br>
+                <label>Jumlah</label>
+                <input type="number" name="jumlah" id="jumlah" required min="1" max="20">
+                <br><br>
+                <label>Metode Bayar</label>
+                <input type="radio" name="bayar" required id="transfer">Transfer
+                <input type="radio" name="bayar" required id="cod">COD 
+                <br><br>
+                <label>Alamat</label>
+                <textarea name="alamat" id="alamat" required maxlength="200" minlength="10">
+                </textarea>
+                <br><br>
+                <button type="submit">Pesan</button>
+            </div>
+        </form>
+    </div>
+            <footer id="contact">
+                <p><small>contact: +62 897-665-9876 </small></p>
+                <p><small>2029</small></p>
+            </footer>
+</body>
+</html>
